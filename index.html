@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Опросник</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+
+    <form action="#" method="post" id="survey-form">
+        <div class="question">
+            <label for="gender">Пол</label>
+            <div class="options">
+                <div class="option">
+                    <input type="radio" id="gender-female" name="gender" value="female" required>Женский
+                </div>
+                <div class="option">
+                    <input type="radio" id="gender-male" name="gender" value="male" required>Мужской
+                </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <label for="age">Ваш возраст</label>
+            <input type="text" name="age" required>
+        </div>
+
+        <div class="question">
+            <label for="device">Каким устройством вы пользуетесь чаще всего?</label>
+            <div class="options">
+                <div class="option">
+                    <input type="radio" id="device-computer" name="device" value="computer" required>Компьютер
+                </div>
+                <div class="option">
+                    <input type="radio" id="device-tablet" name="device" value="tablet" required>Планшет
+                </div>
+                <div class="option">
+                    <input type="radio" id="device-phone" name="device" value="phone" required>Телефон
+                </div>
+            </div>
+        </div>
+
+        <!-- Другие вопросы здесь... -->
+
+        <div class="question">
+            <label for="monitor">Правильно ли (эргономично) стоит Ваш монитор?</label>
+            <div class="options">
+                <div class="option">
+                    <input type="radio" id="monitor-yes" name="monitor" value="yes" required>Да
+                </div>
+                <div class="option">
+                    <input type="radio" id="monitor-no" name="monitor" value="no" required>Нет
+                </div>
+                <div class="option">
+                    <input type="radio" id="monitor-donotknow" name="monitor" value="donotknow" required>Не знаю
+                </div>
+            </div>
+        </div>
+
+        <!-- Другие вопросы здесь... -->
+
+        <div class="question">
+            <label for="exercise">Стараетесь ли Вы ежедневно выполнять гимнастику/зарядку, чтобы облегчить свои боли?</label>
+            <div class="options">
+                <div class="option">
+                    <input type="radio" id="exercise-yes" name="exercise" value="yes" required>Да
+                </div>
+                <div class="option">
+                    <input type="radio" id="exercise-no" name="exercise" value="no" required>Нет
+                </div>
+            </div>
+        </div>
+
+        <!-- Другие вопросы здесь... -->
+
+        <div class="question">
+            <label for="neckpain">Вас беспокоили боли или дискомфорт в шейной области в течение последних 6 месяцев?</label>
+            <div class="options">
+                <div class="option">
+                    <input type="radio" id="neckpain-yes" name="neckpain" value="yes" required onclick="showAdditionalQuestions()">Да
+                </div>
+                <div class="option">
+                    <input type="radio" id="neckpain-no" name="neckpain" value="no" required onclick="hideAdditionalQuestions()">Нет
+                </div>
+            </div>
+        </div>
+
+        <div id="additional-questions" style="display:none;">
+            <div class="question">
+                <label for="painfrequency">Насколько часто Вас беспокоят боли в шее?</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="painfrequency-everyday" name="painfrequency" value="everyday" required>Практически каждый день
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="painfrequency-often" name="painfrequency" value="often" required>Часто (1-2 раза в неделю)
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="painfrequency-sometimes" name="painfrequency" value="sometimes" required>Иногда (1-3 раза в месяц)
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="painfrequency-rarely" name="painfrequency" value="rarely" required>Редко (менее 1 раза в месяц)
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="painintensity">Отметьте значение, соответствующее интенсивности Вашей боли за последние 24 часа</label>
+                <input type="image" id="image" alt="intensity" src="/media/intensity.jpg" />
+                <input type="range" name="painintensity" id="painintensity" min="0" max="10" step="1" value="0" required>
+                <div class="sliderticks">
+                    <span>0</span>
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>10</span>
+                </div>
+            </div>
+        </div>
+
+        <button type="submit">Отправить</button>
+    </form>
+
+    <script>
+        function showAdditionalQuestions() {
+            document.getElementById('additional-questions').style.display = 'block';
+        }
+
+        function hideAdditionalQuestions() {
+            document.getElementById('additional-questions').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
