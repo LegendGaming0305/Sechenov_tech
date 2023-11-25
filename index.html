@@ -180,7 +180,7 @@
         });
 
         // Слушатель событий на кнопку отправки
-        document.getElementById('mainbuttonclicked').addEventListener('click', function() {
+        document.querySelector('.submit').addEventListener('click', function() {
         let json = JSON.stringify(item);
         tg.sendData(json);
         });
