@@ -91,7 +91,16 @@ button:hover {
     line-height: 40px;
 }
 
-.submit {
+.MainButton {
     background-color: var(--tg-theme-button-color);
     color: var(--tg-theme-button-text-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.MainButton:hover {
+    background-color: var(--tg-hover-button-color);
+    color: var(--tg-hover-button-text-color);
 }
