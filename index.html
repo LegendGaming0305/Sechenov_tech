@@ -124,13 +124,14 @@
                 </div>
             </div>
         </div>
-        <button type="submit" class="MainButton">Отправить</button>
+        <button class="MainButton" id="submit">Отправить</button>
     </form>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
         let tg = window.Telegram.WebApp;
         tg.expand();
         let item = {};
+        let form_answers = document.getElementById("submit")
 
         // Слушатель событий на радио-кнопки пола
         document.querySelectorAll('input[name="gender"]').forEach(function(radio) {
@@ -180,10 +181,10 @@
         });
 
         // Слушатель событий на кнопку отправки
-        document.getElementById('mainbuttonclicked').addEventListener('click', function() {
-        let json = JSON.stringify(item);
-        tg.sendData(json);
-        });
+        form_answers.addEventListener("click", () => {
+            tg.sendData(JSON.stringify(item));
+            tg.close();
+        })
         
         function showAdditionalQuestions() {
             document.getElementById('additional-questions').style.display = 'block';
