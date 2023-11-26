@@ -17,6 +17,8 @@ form {
 
 .question {
     margin-bottom: 20px;
+    color: var(--tg-theme-bg-color);
+    border: var(--tg-theme-secondary-bg-color);
 }
 
 label {
