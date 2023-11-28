@@ -10,6 +10,6 @@ router = Router()
 async def process_start(message: types.Message):
     await message.answer(text='Пройдите форму', reply_markup=markup)
 
-@router.message()
+@router.message(F.web_app_data)
 async def process_web_app_data(message: types.Message):
-    await message.answer('Информация получена')
+    pass
