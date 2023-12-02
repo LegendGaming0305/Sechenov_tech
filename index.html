@@ -123,6 +123,803 @@
                     <span>10</span>
                 </div>
             </div>
+
+            <div class="question">
+                <label for="bodypoints">Отметьте на схеме тела человека ВСЕ области, в которых у Вас имеется боль</label>
+                <input type="image" id="bodyimage" alt="bodypoints" src="./bodypoints.jpg">
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="point1" name="bodypoints" value="1" required>1
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="point2" name="bodypoints" value="2" required>2
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="point3" name="bodypoints" value="3" required>3
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="point4" name="bodypoints" value="4" required>4
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="point5" name="bodypoints" value="5" required>5
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="point6" name="bodypoints" value="6" required>6
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="point7" name="bodypoints" value="7" required>7
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="point8" name="bodypoints" value="8" required>8
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <label>NDI</label>
+                <p>Вопросник разработан специально для того, чтобы помочь нам понять, насколько боль в шее ограничивает вашу жизнедеятельность. Пожалуйста, отм утверждений каждого раздела, которое точнее всего соответствует вашему состоянию на сегодня.</p>
+            </div>
+
+            <div class="question">
+                <label for="neckpainintensity">Интенсивность боли в шее</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="neckpainintensity-none" name="neckpainintensity" value="0" required>Нет боли
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="neckpainintensity-mild" name="neckpainintensity" value="1" required>Очень легкая боль
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="neckpainintensity-moderate" name="neckpainintensity" value="2" required>Умеренная боль
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="neckpainintensity-severe" name="neckpainintensity" value="3" required>Довольно сильная боль
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="neckpainintensity-extreme" name="neckpainintensity" value="4" required>Очень сильная боль
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="neckpainintensity-very-extreme" name="neckpainintensity" value="5" required>Самая сильная из всех болей, которые только можно себе представить
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <label for="selfcare">Самообслуживание (умывание, одевание и т.п.)</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="selfcare-no-pain" name="selfcare" value="0" required>Я могу обслуживать себя нормально без особой боли в шее.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="selfcare-mild-pain" name="selfcare" value="1" required>Я могу обслуживать себя нормально с некоторой болью в шее.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="selfcare-moderate-pain" name="selfcare" value="2" required>Самообслуживание причиняет мне боль в шее, и мне приходится быть медлительным и осторожным.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="selfcare-assistance" name="selfcare" value="3" required>Я нуждаюсь в посторонней помощи, но в основном, обслуживаю себя самостоятельно.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="selfcare-daily-assistance" name="selfcare" value="4" required>Чтобы обслуживать себя нормально, я по большей части нуждаюсь в ежедневной посторонней помощи.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="selfcare-cannot" name="selfcare" value="5" required>Я не могу самостоятельно одеться. Я с трудом умываюсь и остаюсь в постели.
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="lifting">Поднимание предметов</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="lifting-easy" name="lifting" value="0" required>Я могу поднимать тяжелые предметы без особой боли в шее.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="lifting-some-pain" name="lifting" value="1" required>Я могу поднимать тяжелые предметы с некоторой болью в шее.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="lifting-convenient" name="lifting" value="2" required>Боль в шее мешает мне поднимать тяжелые предметы с пола, но я могу справиться, если они расположены удобно, например - на столе.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="lifting-light" name="lifting" value="3" required>Боль в шее мешает мне поднимать тяжелые предметы с пола, но я могу справиться с легкими предметами или предметами средней тяжести, если они удобно расположены.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="lifting-very-easy" name="lifting" value="4" required>Я могу поднимать только очень легкие предметы.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="lifting-cannot" name="lifting" value="5" required>Я вовсе не могу ни поднять, ни перенести что-либо.
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="reading">Чтение (в том числе с экрана компьютера)</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="reading" name="reading" value="0" required>Я могу читать столько, сколько захочу, без боли в шее.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="reading-light" name="reading" value="1" required>Я могу читать столько, сколько захочу, с легкой болью в шее.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="reading-convenient" name="reading" value="2" required>Я могу читать столько, сколько захочу, с умеренной болью в шее.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="reading-some-pain" name="reading" value="3" required>Я не могу читать столько, сколько захочу, из-за умеренной боли в шее.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="reading-strong" name="reading" value="4" required>Я не могу читать столько, сколько захочу, из-за сильной боли в шее.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="reading-cannot" name="reading" value="5" required>Из-за боли в шее я не могу читать совсем.
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="headache">Головная боль</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="headache-none" name="headache" value="0" required>У меня нет головных болей.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="headache-mild" name="headache" value="1" required>Иногда меня беспокоит легкая головная боль.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="headache-moderate" name="headache" value="2" required>Иногда меня беспокоит умеренная головная боль.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="headache-often-moderate" name="headache" value="3" required>Меня часто беспокоит умеренная головная боль.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="headache-often-severe" name="headache" value="4" required>Меня часто беспокоит сильная головная боль.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="headache-constant" name="headache" value="5" required>Голова болит постоянно.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <label for="attention">Концентрация внимания, сосредоточение</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="attention-easy" name="attention" value="0" required>Я могу полностью сосредоточиться без особых затруднений.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="attention-some-easy" name="attention" value="1" required>Я могу полностью сосредоточиться с небольшими затруднениями.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="attention-effort" name="attention" value="2" required>Чтобы сосредоточиться, мне нужно приложить достаточное усилие.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="attention-hard" name="attention" value="3" required>Мне довольно трудно сосредоточиться.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="attention-very-hard" name="attention" value="4" required>Мне крайне тяжело сосредоточиться.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="attention-cannot" name="attention" value="5" required>Я не могу сосредоточиться совсем.
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="workability">Работоспособность</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="workability-no-pain" name="workability" value="0" required>Я могу работать столько, сколько необходимо вообще без боли в шее.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="workability-mild-pain" name="workability" value="1" required>Я могу работать, сколько необходимо, с легкой болью в шее.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="workability-moderate-pain" name="workability" value="2" required>Я работаю столько, сколько необходимо, с умеренной болью в шее.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="workability-cannot-moderate-pain" name="workability" value="3" required>Я не могу работать столько, сколько необходимо, из-за умеренной боли в шее.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="workability-cannot-severe-pain" name="workability" value="4" required>Из-за сильной боли в шее я с трудом делаю какую-либо работу.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="workability-cannot-at-all" name="workability" value="5" required>Из-за сильной боли в шее я не могу работать совсем.
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="driving">Вождение</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="driving-no-pain" name="driving" value="0" required>Я могу водить машину вообще без боли в шее.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="driving-mild-pain" name="driving" value="1" required>Я могу водить машину столько, сколько захочу, с легкой болью в шее.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="driving-moderate-pain" name="driving" value="2" required>Я могу водить машину столько, сколько захочу, с умеренной болью в шее.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="driving-cannot-moderate-pain" name="driving" value="3" required>Я не могу водить машину столько, сколько захочу, из-за умеренной боли в шее.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="driving-cannot-severe-pain" name="driving" value="4" required>Из-за сильной боли в шее я с большим трудом могу водить машину.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="driving-cannot-at-all" name="driving" value="5" required>Из-за боли в шее я не могу водить машину совсем.
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="sleep">Сон</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="sleep-no-problems" name="sleep" value="0" required>У меня нет проблем со сном.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="sleep-slightly-disturbed" name="sleep" value="1" required>Из-за боли в шее мой сон слегка нарушен (менее чем один час бессонницы).
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="sleep-mildly-disturbed" name="sleep" value="2" required>Из-за боли в шее мой сон немного нарушен (1 - 2 часа бессонницы).
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="sleep-moderately-disturbed" name="sleep" value="3" required>Из-за боли в шее мой сон умеренно нарушен (2 - 3 часа бессонницы).
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="sleep-severely-disturbed" name="sleep" value="4" required>Из-за боли в шее мой сон сильно нарушен (3 - 5 часов бессонницы).
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="sleep-completely-disturbed" name="sleep" value="5" required>Из-за боли в шее мой сон полностью нарушен (5 - 7 часов бессонницы).
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="leisure">Отдых и Досуг (свободное время)</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="leisure-no-pain" name="leisure" value="0" required>Я могу отдыхать и развлекаться вообще без боли в шее.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="leisure-some-pain" name="leisure" value="1" required>Я могу отдыхать и развлекаться с некоторой болью в шее.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="leisure-mostly-accessible" name="leisure" value="2" required>Из-за боли в шее мне доступно большинство, но не все виды отдыха и развлечений.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="leisure-some-accessible" name="leisure" value="3" required>Из-за боли в шее мне доступны лишь некоторые виды отдыха и развлечений.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="leisure-difficult" name="leisure" value="4" required>Из-за боли в шее я могу отдыхать и развлекаться с большим трудом.
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="leisure-cannot" name="leisure" value="5" required>Из-за боли в шее я совсем не могу отдыхать и развлекаться.
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label>DN4</label>
+                <p>Соответствует ли боль, которую вы испытываете, одному или нескольким из следующих определений?</p>
+            </div>
+
+            <div class="question">
+                <label for="burning-sensation">Ощущение жжения</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="burning-sensation-yes" name="burning-sensation" value="1" required>Да
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="burning-sensation-no" name="burning-sensation" value="0" required>Нет
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="painful-cold-sensation">Болезненное ощущение холода</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="painful-cold-sensation-yes" name="painful-cold-sensation" value="1" required>Да
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="painful-cold-sensation-no" name="painful-cold-sensation" value="0" required>Нет
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="electric-shock-sensation">Ощущение как от ударов током</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="electric-shock-sensation-yes" name="electric-shock-sensation" value="1" required>Да
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="electric-shock-sensation-no" name="electric-shock-sensation" value="0" required>Нет
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>Сопровождается ли боль одним или несколькими из следующих симптомов в области ее локализации?</p>
+            </div>
+
+            <div class="question">
+                <label for="tingling-crawling-sensation">Пощипыванием, ощущением ползания мурашек</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="tingling-crawling-sensation-yes" name="tingling-crawling-sensation" value="1" required>Да
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="tingling-crawling-sensation-no" name="tingling-crawling-sensation" value="0" required>Нет
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="tingling-sensation">Покалывание</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="tingling-sensation-yes" name="tingling-sensation" value="1" required>Да
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="tingling-sensation-no" name="tingling-sensation" value="0" required>Нет
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="numbness-sensation">Онемение</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="numbness-sensation-yes" name="numbness-sensation" value="1" required>Да
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="numbness-sensation-no" name="numbness-sensation" value="0" required>Нет
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="itching-sensation">Зудом</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="itching-sensation-yes" name="itching-sensation" value="1" required>Да
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="itching-sensation-no" name="itching-sensation" value="0" required>Нет
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>Локализована ли боль в той же области, где осмотр выявляет один или оба следующих симптома?</p>
+            </div>
+
+            <div class="question">
+                <label for="reduced-touch-sensitivity">Пониженная чувствительность к прикосновению</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="reduced-touch-sensitivity-yes" name="reduced-touch-sensitivity" value="1" required>Да
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="reduced-touch-sensitivity-no" name="reduced-touch-sensitivity" value="0" required>Нет
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="reduced-tingling-sensitivity">Пониженная чувствительность к покалыванию</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="reduced-tingling-sensitivity-yes" name="reduced-tingling-sensitivity" value="1" required>Да
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="reduced-tingling-sensitivity-no" name="reduced-tingling-sensitivity" value="0" required>Нет
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>Можно ли вызвать или усилить боль в области ее локализации?</p>
+            </div>
+
+            <div class="question">
+                <label for="brushing-sensation">Проведя в этой области кисточкой </label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="brushing-sensation-yes" name="brushing-sensation" value="1" required>Да
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="brushing-sensation-no" name="brushing-sensation" value="0" required>Нет
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <label>TheKeeleSTarT MSK Tool</label>
+                <p>Шкала для оценки рисков хронизации скелетно-мышечной боли.</p>
+                <p>Анкета нацелена на оценку интенсивности и влияния</p>
+                <p>Вашей боли за последние 2 недели.</p>
+            </div>
+
+            <div class="question">
+                <label for="pain-last-2-weeks">За последние 2 недели отмечали боли в спине и крупных суставах?</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="pain-last-2-weeks-yes" name="pain-last-2-weeks" value="1" required>Да
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="pain-last-2-weeks-no" name="pain-last-2-weeks" value="0" required>Нет
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="pain-limiting-walking">Ограничивала ли ваша боль за последние 2 недели дистанцию ходьбы?</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="pain-limiting-walking-yes" name="pain-limiting-walking" value="1" required>Да
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="pain-limiting-walking-no" name="pain-limiting-walking" value="0" required>Нет
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="pain-affecting-dressing">За последние 2 недели из-за боли Вы одевались медленнее, чем обычно?</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="pain-affecting-dressing-yes" name="pain-affecting-dressing" value="1" required>Да
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="pain-affecting-dressing-no" name="pain-affecting-dressing" value="0" required>Нет
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="chronic-diseases">Есть ли у вас хронические заболевания?</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="chronic-diseases-yes" name="chronic-diseases" value="1" required>Да
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="chronic-diseases-no" name="chronic-diseases" value="0" required>Нет
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="pain-affecting-movement">Считаете ли вы, что из-за боли вам следует меньше двигаться?</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="pain-affecting-movement-yes" name="pain-affecting-movement" value="1" required>Да
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="pain-affecting-movement-no" name="pain-affecting-movement" value="0" required>Нет
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="thoughts-about-danger">Возникали ли у вас мысли о том, что ваши боли опасны для вашего здоровья?</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="thoughts-about-danger-yes" name="thoughts-about-danger" value="1" required>Да
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="thoughts-about-danger-no" name="thoughts-about-danger" value="0" required>Нет
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="pain-duration-belief">Считаете ли вы, что ваша боль будет длиться долго?</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="pain-duration-belief-yes" name="pain-duration-belief" value="1" required>Да
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="pain-duration-belief-no" name="pain-duration-belief" value="0" required>Нет
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="pain-affecting-enjoyment">За последние 2 недели не отмечали ли вы, что из-за боли вы не можете получать удовольствие от занятий, которые раньше приносили удовольствие?</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="pain-affecting-enjoyment-yes" name="pain-affecting-enjoyment" value="1" required>Да
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="pain-affecting-enjoyment-no" name="pain-affecting-enjoyment" value="0" required>Нет
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="pain-bother-level">В целом, насколько сильно вас беспокоит ваша боль за последние 2 недели?</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="pain-bother-level-not-at-all" name="pain-bother-level" value="0" required>Совсем не беспокоит
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="pain-bother-level-slightly" name="pain-bother-level" value="1" required>Немного беспокоит
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="pain-bother-level-moderately" name="pain-bother-level" value="2" required>Умеренно беспокоит
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="pain-bother-level-strongly" name="pain-bother-level" value="3" required>Сильно беспокоит
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="pain-bother-level-very-strongly" name="pain-bother-level" value="4" required>Очень сильно беспокоит
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label>Шкала Тревоги и Депрессии (HADS)</label>
+                <p>Каждому утверждению соответствуют 4 варианта ответа</p>
+                <p>Выберите тот из ответов, который соответствует Вашему состоянию, а затем просуммируйте баллы в каждой части.</p>
+            </div>
+
+            <div class="question">
+                <label for="tension-discomfort-feeling">Я испытываю напряжение, мне не по себе</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="tension-feeling-all-the-time" name="tension-feeling" value="all-the-time" required>Все время
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="tension-feeling-often" name="tension-feeling" value="often" required>Часто
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="tension-feeling-sometimes" name="tension-feeling" value="sometimes" required>Время от времени, иногда
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="tension-feeling-not-at-all" name="tension-feeling" value="not-at-all" required>Совсем не испытываю
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="fear-of-something-horrible">Я испытываю страх, кажется, что что-то ужасное может вот-вот случиться</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="fear-very-intense" name="fear-intensity" value="very-intense" required>Определенно это так, и страх очень велик
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="fear-somewhat-intense" name="fear-intensity" value="somewhat-intense" required>Да, это так, но страх не очень велик
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="fear-sometimes-not-bothered" name="fear-intensity" value="sometimes-not-bothered" required>Иногда, но это меня не беспокоит
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="fear-not-at-all" name="fear-intensity" value="not-at-all" required>Совсем не испытываю
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="restless-thoughts">Беспокойные мысли крутятся у меня в голове</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="restless-thoughts-constantly" name="restless-thoughts" value="constantly" required>Постоянно
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="restless-thoughts-most-of-the-time" name="restless-thoughts" value="most-of-the-time" required>Большую часть времени
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="restless-thoughts-occasionally" name="restless-thoughts" value="occasionally" required>Время от времени и не так часто
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="restless-thoughts-only-sometimes" name="restless-thoughts" value="only-sometimes" required>Только иногда
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="ease-of-sitting-and-relaxing">Я легко могу присесть и расслабиться</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="ease-of-sitting-and-relaxing-definitely" name="ease-of-sitting-and-relaxing" value="definitely" required>Определенно, это так
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="ease-of-sitting-and-relaxing-probably" name="ease-of-sitting-and-relaxing" value="probably" required>Наверно, это так
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="ease-of-sitting-and-relaxing-occasionally" name="ease-of-sitting-and-relaxing" value="occasionally" required>Лишь изредка, это так
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="ease-of-sitting-and-relaxing-not-at-all" name="ease-of-sitting-and-relaxing" value="not-at-all" required>Совсем не могу
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="internal-tension-or-trembling">Я испытываю внутреннее напряжение или дрожь</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="internal-tension-or-trembling-not-at-all" name="internal-tension-or-trembling" value="not-at-all" required>Совсем не испытываю
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="internal-tension-or-trembling-sometimes" name="internal-tension-or-trembling" value="sometimes" required>Иногда
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="internal-tension-or-trembling-often" name="internal-tension-or-trembling" value="often" required>Часто
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="internal-tension-or-trembling-very-often" name="internal-tension-or-trembling" value="very-often" required>Очень часто
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="restlessness-constant-need-to-move">Я испытываю неусидчивость, мне постоянно нужно двигаться</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="restlessness-definitely" name="restlessness" value="definitely" required>Определенно, это так
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="restlessness-probably" name="restlessness" value="probably" required>Наверно, это так
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="restlessness-to-some-extent" name="restlessness" value="to-some-extent" required>Лишь в некоторой степени, это так
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="restlessness-not-at-all" name="restlessness" value="not-at-all" required>Совсем не испытываю
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="sudden-panic">У меня бывает внезапное чувство паники</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="sudden-panic-very-often" name="sudden-panic" value="very-often" required>Очень часто
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="sudden-panic-quite-often" name="sudden-panic" value="quite-often" required>Довольно часто
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="sudden-panic-not-so-often" name="sudden-panic" value="not-so-often" required>Не так уж часто
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="sudden-panic-never" name="sudden-panic" value="never" required>Совсем не бывает
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="pleasure-maintained">То, что приносило мне большое удовольствие, и сейчас вызывает у меня такое же чувство</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="pleasure-maintained-definitely" name="pleasure-maintained" value="definitely" required>Определенно, это так
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="pleasure-maintained-probably" name="pleasure-maintained" value="probably" required>Наверное, это так
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="pleasure-maintained-to-a-very-small-extent" name="pleasure-maintained" value="to-a-very-small-extent" required>Лишь в очень малой степени, это так
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="pleasure-maintained-not-at-all" name="pleasure-maintained" value="not-at-all" required>Это совсем не так
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="ability-to-laugh">Я способен рассмеяться и увидеть в том или ином событии смешное</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="ability-to-laugh-definitely" name="ability-to-laugh" value="definitely" required>Определенно, это так
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="ability-to-laugh-probably" name="ability-to-laugh" value="probably" required>Наверное, это так
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="ability-to-laugh-to-a-very-small-extent" name="ability-to-laugh" value="to-a-very-small-extent" required>Лишь в очень малой степени, это так
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="ability-to-laugh-not-at-all" name="ability-to-laugh" value="not-at-all" required>Совсем не способен
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="feeling-energetic">Я испытываю бодрость</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="feeling-energetic-not-at-all" name="feeling-energetic" value="not-at-all" required>Совсем не испытываю
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="feeling-energetic-very-rarely" name="feeling-energetic" value="very-rarely" required>Очень редко
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="feeling-energetic-sometimes" name="feeling-energetic" value="sometimes" required>Иногда
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="feeling-energetic-almost-always" name="feeling-energetic" value="almost-always" required>Практически все время
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="perception-of-slowing-down">Мне кажется, что я стал все делать очень медленно</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="perception-of-slowing-down-almost-always" name="perception-of-slowing-down" value="almost-always" required>Практически все время
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="perception-of-slowing-down-often" name="perception-of-slowing-down" value="often" required>Часто
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="perception-of-slowing-down-sometimes" name="perception-of-slowing-down" value="sometimes" required>Иногда
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="perception-of-slowing-down-not-at-all" name="perception-of-slowing-down" value="not-at-all" required>Совсем нет
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="attention-to-appearance">Я не слежу за своей внешностью</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="attention-to-appearance-definitely" name="attention-to-appearance" value="definitely" required>Определенно, это так
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="attention-to-appearance-not-enough-time" name="attention-to-appearance" value="not-enough-time" required>Я не уделяю этому столько времени, сколько нужно
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="attention-to-appearance-less-time-now" name="attention-to-appearance" value="less-time-now" required>Может быть, я стал меньше уделять этому времени
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="attention-to-appearance-as-before" name="attention-to-appearance" value="as-before" required>Я слежу за собой так же, как и раньше
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="satisfaction-from-activities">Я считаю, что мои дела (занятия, увлечения) могут принести мне чувство удовлетворения</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="satisfaction-from-activities-as-usual" name="satisfaction-from-activities" value="as-usual" required>Точно так же, как и обычно
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="satisfaction-from-activities-less-than-before" name="satisfaction-from-activities" value="less-than-before" required>Да, но не в той степени, как раньше
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="satisfaction-from-activities-significantly-less" name="satisfaction-from-activities" value="significantly-less" required>Значительно меньше, чем обычно
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="satisfaction-from-activities-not-at-all" name="satisfaction-from-activities" value="not-at-all" required>Совсем так не считаю
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="pleasure-from-entertainment">Я могу получить удовольствие от хорошей книги, радио- или телепрограммы</label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="pleasure-from-entertainment-often" name="pleasure-from-entertainment" value="often" required>Часто
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="pleasure-from-entertainment-sometimes" name="pleasure-from-entertainment" value="sometimes" required>Иногда
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="pleasure-from-entertainment-rarely" name="pleasure-from-entertainment" value="rarely" required>Редко
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="pleasure-from-entertainment-very-rarely" name="pleasure-from-entertainment" value="very-rarely" required>Очень редко
+                    </div>
+                </div>
+            </div>
+            
+
         </div>
     <button class="MainButton" id="submit">Отправить</button>
     </form>
@@ -130,57 +927,320 @@
     <script>
         let tg = window.Telegram.WebApp;
         tg.expand();
-        let item = {};
+        let item = {
+            ndi: 0,
+            dn4: 0,
+            TheKeeleSTarTMSKTool: 0,
+        };
         let form_answers = document.getElementById("submit")
 
-        // Слушатель событий на радио-кнопки пола
+        function accumulateValue(section, value) {
+            item[section] += parseInt(value);
+        }
+
         document.querySelectorAll('input[name="gender"]').forEach(function(radio) {
         radio.addEventListener('click', function() {
             item.gender = this.value;
         });
         });
 
-        // Слушатель событий на радио-кнопки устройства
+        
         document.querySelectorAll('input[name="device"]').forEach(function(radio) {
         radio.addEventListener('click', function() {
             item.device = this.value;
         });
         });
 
-        // Слушатель событий на радио-кнопки монитора
+        
         document.querySelectorAll('input[name="monitor"]').forEach(function(radio) {
         radio.addEventListener('click', function() {
             item.monitor = this.value;
         });
         });
 
-        // Слушатель событий на радио-кнопки гимнастики/зарядки
+        
         document.querySelectorAll('input[name="exercise"]').forEach(function(radio) {
         radio.addEventListener('click', function() {
             item.exercise = this.value;
         });
         });
 
-        // Слушатель событий на радио-кнопки болей в шее
+        
         document.querySelectorAll('input[name="neckpain"]').forEach(function(radio) {
         radio.addEventListener('click', function() {
             item.neckpain = this.value;
         });
         });
 
-        // Слушатель событий на радио-кнопки частоты болей в шее
+        
         document.querySelectorAll('input[name="painfrequency"]').forEach(function(radio) {
         radio.addEventListener('click', function() {
             item.painfrequency = this.value;
         });
         });
 
-        // Слушатель событий на ползунок интенсивности боли в шее
+        document.querySelectorAll('input[name="neckpainintensity"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            accumulateValue('ndi', this.value);
+        });
+        });
+
+        document.querySelectorAll('input[name="selfcare"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            accumulateValue('ndi', this.value);
+        });
+        });
+        
+        document.querySelectorAll('input[name="lifting"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            accumulateValue('ndi', this.value);
+        });
+        });
+
+        document.querySelectorAll('input[name="reading"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            accumulateValue('ndi', this.value);
+        });
+        });
+
+        document.querySelectorAll('input[name="headache"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            accumulateValue('ndi', this.value);
+        });
+        });
+
+        document.querySelectorAll('input[name="attention"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            accumulateValue('ndi', this.value);
+        });
+        });
+
+        document.querySelectorAll('input[name="workability"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            accumulateValue('ndi', this.value);
+        });
+        });
+
+        document.querySelectorAll('input[name="driving"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            accumulateValue('ndi', this.value);
+        });
+        });
+
+        document.querySelectorAll('input[name="sleep"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            accumulateValue('ndi', this.value);
+        });
+        });
+
+        document.querySelectorAll('input[name="leisure"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            accumulateValue('ndi', this.value);;
+        });
+        });
+
+        document.querySelectorAll('input[name="burning-sensation"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            accumulateValue('dn4', this.value);
+        });
+        });
+
+        document.querySelectorAll('input[name="painful-cold-sensation"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            accumulateValue('dn4', this.value);
+        });
+        });
+        
+        document.querySelectorAll('input[name="electric-shock-sensation"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            accumulateValue('dn4', this.value);
+        });
+        });
+
+        document.querySelectorAll('input[name="tingling-crawling-sensation"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            accumulateValue('dn4', this.value);
+        });
+        });
+
+        document.querySelectorAll('input[name="tingling-sensation"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            accumulateValue('dn4', this.value);
+        });
+        });
+
+        document.querySelectorAll('input[name="numbness-sensation"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            accumulateValue('dn4', this.value);
+        });
+        });
+
+        document.querySelectorAll('input[name="itching-sensation"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            accumulateValue('dn4', this.value);
+        });
+        });
+
+        document.querySelectorAll('input[name="reduced-touch-sensitivity"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            accumulateValue('dn4', this.value);
+        });
+        });
+
+        document.querySelectorAll('input[name="reduced-tingling-sensitivity"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            accumulateValue('dn4', this.value);
+        });
+        });
+
+        document.querySelectorAll('input[name="brushing-sensation"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            accumulateValue('dn4', this.value);
+        });
+        });
+
+        document.querySelectorAll('input[name="pain-last-2-weeks"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            item.lifting = this.value;
+        });
+        });
+
+        document.querySelectorAll('input[name="pain-limiting-walking"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            item.lifting = this.value;
+        });
+        });
+
+        document.querySelectorAll('input[name="pain-affecting-dressing"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            item.lifting = this.value;
+        });
+        });
+
+        document.querySelectorAll('input[name="chronic-diseases"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            item.lifting = this.value;
+        });
+        });
+        
+        document.querySelectorAll('input[name="pain-affecting-movement"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            item.lifting = this.value;
+        });
+        });
+
+        document.querySelectorAll('input[name="thoughts-about-danger"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            item.lifting = this.value;
+        });
+        });
+
+        document.querySelectorAll('input[name="pain-duration-belief"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            item.lifting = this.value;
+        });
+        });
+
+        document.querySelectorAll('input[name="pain-affecting-enjoyment"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            item.lifting = this.value;
+        });
+        });
+
+        document.querySelectorAll('input[name="pain-bother-level"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            item.lifting = this.value;
+        });
+        });
+
+        document.querySelectorAll('input[name="tension-discomfort-feeling"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            item.lifting = this.value;
+        });
+        });
+
+        document.querySelectorAll('input[name="fear-of-something-horribles"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            item.lifting = this.value;
+        });
+        });
+
+        document.querySelectorAll('input[name="restless-thoughts"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            item.lifting = this.value;
+        });
+        });
+
+        document.querySelectorAll('input[name="ease-of-sitting-and-relaxing"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            item.lifting = this.value;
+        });
+        });
+
+        document.querySelectorAll('input[name="internal-tension-or-trembling"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            item.lifting = this.value;
+        });
+        });
+
+        document.querySelectorAll('input[name="restlessness-constant-need-to-move"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            item.lifting = this.value;
+        });
+        });
+
+        document.querySelectorAll('input[name="sudden-panic"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            item.lifting = this.value;
+        });
+        });
+
+        document.querySelectorAll('input[name="pleasure-maintained"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            item.lifting = this.value;
+        });
+        });
+
+        document.querySelectorAll('input[name="ability-to-laugh"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            item.lifting = this.value;
+        });
+        });
+
+        document.querySelectorAll('input[name="feeling-energetic"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            item.lifting = this.value;
+        });
+        });
+
+        document.querySelectorAll('input[name="perception-of-slowing-down"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            item.lifting = this.value;
+        });
+        });
+
+        document.querySelectorAll('input[name="attention-to-appearance"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            item.lifting = this.value;
+        });
+        });
+
+        document.querySelectorAll('input[name="satisfaction-from-activities"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            item.lifting = this.value;
+        });
+        });
+
+        document.querySelectorAll('input[name="pleasure-from-entertainment"]').forEach(function(radio) {
+        radio.addEventListener('click', function() {
+            item.lifting = this.value;
+        });
+        });
+        
         document.getElementById('painintensity').addEventListener('input', function() {
         item.painintensity = this.value;
         });
-
-        // Слушатель событий на кнопку отправки
+        
         form_answers.addEventListener("click", () => {
             tg.sendData(JSON.stringify(item));
             tg.close();

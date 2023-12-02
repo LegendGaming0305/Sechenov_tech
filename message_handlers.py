@@ -11,5 +11,5 @@ async def process_start(message: types.Message):
     await message.answer(text='Пройдите форму', reply_markup=markup)
 
 @router.message(F.web_app_data)
-async def process_web_app_data(message: types.Message):
+async def process_web_app_data(web_app_data: types.WebAppData):
     pass
