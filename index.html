@@ -979,121 +979,35 @@
         });
         });
 
-        document.querySelectorAll('input[name="neckpainintensity"]').forEach(function(radio) {
+        document.querySelectorAll(`
+        input[name="neckpainintensity"],
+        input[name="selfcare"],
+        input[name="lifting"],
+        input[name="reading"],
+        input[name="headache"],
+        input[name="attention"],
+        input[name="workability"],
+        input[name="driving"],
+        input[name="sleep"],
+        input[name="leisure"]
+        `).forEach(function(radio) {
         radio.addEventListener('click', function() {
             accumulateValue('ndi', this.value);
         });
         });
 
-        document.querySelectorAll('input[name="selfcare"]').forEach(function(radio) {
-        radio.addEventListener('click', function() {
-            accumulateValue('ndi', this.value);
-        });
-        });
-        
-        document.querySelectorAll('input[name="lifting"]').forEach(function(radio) {
-        radio.addEventListener('click', function() {
-            accumulateValue('ndi', this.value);
-        });
-        });
-
-        document.querySelectorAll('input[name="reading"]').forEach(function(radio) {
-        radio.addEventListener('click', function() {
-            accumulateValue('ndi', this.value);
-        });
-        });
-
-        document.querySelectorAll('input[name="headache"]').forEach(function(radio) {
-        radio.addEventListener('click', function() {
-            accumulateValue('ndi', this.value);
-        });
-        });
-
-        document.querySelectorAll('input[name="attention"]').forEach(function(radio) {
-        radio.addEventListener('click', function() {
-            accumulateValue('ndi', this.value);
-        });
-        });
-
-        document.querySelectorAll('input[name="workability"]').forEach(function(radio) {
-        radio.addEventListener('click', function() {
-            accumulateValue('ndi', this.value);
-        });
-        });
-
-        document.querySelectorAll('input[name="driving"]').forEach(function(radio) {
-        radio.addEventListener('click', function() {
-            accumulateValue('ndi', this.value);
-        });
-        });
-
-        document.querySelectorAll('input[name="sleep"]').forEach(function(radio) {
-        radio.addEventListener('click', function() {
-            accumulateValue('ndi', this.value);
-        });
-        });
-
-        document.querySelectorAll('input[name="leisure"]').forEach(function(radio) {
-        radio.addEventListener('click', function() {
-            accumulateValue('ndi', this.value);;
-        });
-        });
-
-        document.querySelectorAll('input[name="burning-sensation"]').forEach(function(radio) {
-        radio.addEventListener('click', function() {
-            accumulateValue('dn4', this.value);
-        });
-        });
-
-        document.querySelectorAll('input[name="painful-cold-sensation"]').forEach(function(radio) {
-        radio.addEventListener('click', function() {
-            accumulateValue('dn4', this.value);
-        });
-        });
-        
-        document.querySelectorAll('input[name="electric-shock-sensation"]').forEach(function(radio) {
-        radio.addEventListener('click', function() {
-            accumulateValue('dn4', this.value);
-        });
-        });
-
-        document.querySelectorAll('input[name="tingling-crawling-sensation"]').forEach(function(radio) {
-        radio.addEventListener('click', function() {
-            accumulateValue('dn4', this.value);
-        });
-        });
-
-        document.querySelectorAll('input[name="tingling-sensation"]').forEach(function(radio) {
-        radio.addEventListener('click', function() {
-            accumulateValue('dn4', this.value);
-        });
-        });
-
-        document.querySelectorAll('input[name="numbness-sensation"]').forEach(function(radio) {
-        radio.addEventListener('click', function() {
-            accumulateValue('dn4', this.value);
-        });
-        });
-
-        document.querySelectorAll('input[name="itching-sensation"]').forEach(function(radio) {
-        radio.addEventListener('click', function() {
-            accumulateValue('dn4', this.value);
-        });
-        });
-
-        document.querySelectorAll('input[name="reduced-touch-sensitivity"]').forEach(function(radio) {
-        radio.addEventListener('click', function() {
-            accumulateValue('dn4', this.value);
-        });
-        });
-
-        document.querySelectorAll('input[name="reduced-tingling-sensitivity"]').forEach(function(radio) {
-        radio.addEventListener('click', function() {
-            accumulateValue('dn4', this.value);
-        });
-        });
-
-        document.querySelectorAll('input[name="brushing-sensation"]').forEach(function(radio) {
+        document.querySelectorAll(`
+        input[name="burning-sensation"],
+        input[name="painful-cold-sensation"],
+        input[name="electric-shock-sensation"],
+        input[name="tingling-crawling-sensation"],
+        input[name="tingling-sensation"],
+        input[name="numbness-sensation"],
+        input[name="itching-sensation"],
+        input[name="reduced-touch-sensitivity"],
+        input[name="reduced-tingling-sensitivity"],
+        input[name="brushing-sensation"]
+        `).forEach(function(radio) {
         radio.addEventListener('click', function() {
             accumulateValue('dn4', this.value);
         });
