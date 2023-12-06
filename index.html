@@ -927,17 +927,12 @@
     <script>
         let tg = window.Telegram.WebApp;
         tg.expand();
-        let item = {
-            ndi: 0,
-            dn4: 0,
-            TheKeeleSTarTMSKTool: 0,
-            HADSAlarmPart: 0,
-            HADSDepressionPart: 0,
-        };
+        let item = {};
+
         let form_answers = document.getElementById("submit")
 
         function accumulateValue(section, value) {
-            item[section] += parseInt(value);
+            item[section] = parseInt(value);
         }
 
         document.querySelectorAll('input[name="gender"]').forEach(function(radio) {
@@ -994,7 +989,7 @@
         input[name="leisure"]
         `).forEach(function(radio) {
         radio.addEventListener('click', function() {
-            accumulateValue('ndi', this.value);
+            accumulateValue(this.name, this.value);
         });
         });
 
@@ -1011,7 +1006,7 @@
         input[name="brushing-sensation"]
         `).forEach(function(radio) {
         radio.addEventListener('click', function() {
-            accumulateValue('dn4', this.value);
+            accumulateValue(this.name, this.value);
         });
         });
 
@@ -1027,7 +1022,7 @@
         input[name="pain-bother-level"]
         `).forEach(function(radio) {
         radio.addEventListener('click', function() {
-            accumulateValue('TheKeeleSTarTMSKTool', this.value);
+            accumulateValue(this.name, this.value);
         });
         });
 
@@ -1041,7 +1036,7 @@
         input[name="sudden-panic"]
         `).forEach(function(radio) {
         radio.addEventListener('click', function() {
-            accumulateValue('HADSAlarmPart', this.value);
+            accumulateValue(this.name, this.value);
         });
         });
 
@@ -1055,7 +1050,7 @@
         input[name="pleasure-from-entertainment"]
         `).forEach(function(radio) {
         radio.addEventListener('click', function() {
-            accumulateValue('HADSDepressionPart', this.value);
+            accumulateValue(this.name, this.value);
         });
         });
         
